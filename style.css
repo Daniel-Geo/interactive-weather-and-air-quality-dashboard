@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(315deg, var(--background-white), var(--background-blue));
+    background: linear-gradient(to bottom left, var(--background-white), var(--background-blue));
     color: var(--text-color);
     font-family: "Mogra", system-ui;
     margin: 0;
