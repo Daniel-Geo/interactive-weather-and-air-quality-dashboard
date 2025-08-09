@@ -90,3 +90,27 @@ abbr {
 abbr:hover {
     cursor: default;
 }
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#Dashboard {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 25px;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .data {
+        background: #D1E0D7;
+        padding: 15px;
+        border-radius: 8px;
+        min-width: 250px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: black !important;
+        font-weight: bold;
+    }

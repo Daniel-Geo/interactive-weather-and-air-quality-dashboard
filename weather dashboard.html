@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Weather and Air Quality Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1 id="website-name">Interactive Weather and Air Quality Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Dashboard.html">placeholder1</a></li>
+                <li><a href="placeholder2.html">placeholder2</a></li>
+                <li><button id="dark-mode">Light mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    <p>Choose your construction location</p>
+    <div id="map" style="height:300px;"></div>
+    <p id="coords">Location Data</p>
+    <div id="Dashboard">
+        <div class="data" id="weather">
+            <h3>Weather Data</h3>
+            <p>Temperature: <span id="temp">...</span> °C</p>
+            <p>Humidity: <span id="humidity">...</span> %</p>
+            <p>Condition: <span id="condition">...</span></p>
+        </div>
+        <div class="data" id="air-quality">
+            <h3>Air Quality Data</h3>
+            <p>PM2.5: <span id="pm25">...</span></p>
+            <p>PM10: <span id="pm10">...</span></p>
+            <p>O₃: <span id="o3">...</span></p>
+        </div>
+        <div class="data" id="soil">
+            <h3>Soil Properties</h3>
+            <p>Moisture: <span id="soil-moisture">...</span></p>
+            <p>pH: <span id="soil-ph">...</span></p>
+            <p>Type: <span id="soil-type">...</span></p>
+        </div>
+    </div>
+    <footer id="footer">
+        <p id="footer-text">
+            Made with <abbr title="love">❤️</abbr> by
+            <a href="https://leaderboard-seven-pi.vercel.app/" target="_blank">CS club members</a>
+        </p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
