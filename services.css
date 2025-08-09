@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --prc : white;
+    --snd : #eef0ef;
+    --bg-color : #607EBC;
+}
+body{
+    background-color: var(--prc);
+    font-family: "Inter", sans-serif;
+}
+nav{
+    background-color: var(--bg-color);
+    height: 10vh;
+    border-radius: 50px;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 3vh;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: var(--prc);
+    font-size: 18px;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+nav>ul>li{
+    display: inline;
+}
+nav>ul>li>a:hover{
+    color: black;
+    transition: 1s;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav>div>button{
+    color: var(--bg-color);
+    background-color: var(--prc);
+    outline: none;
+    border: 2px transparent solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+nav>div>button:hover{
+    color: var(--prc);
+    background-color: black;
+    transition: 1s;
+}
+nav>div>button>a:hover{
+    color: var(--prc);
+}
+nav>div>button>a{
+    text-decoration: none;
+    color: var(--bg-color);
+}
+.img-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.img-cont>img{
+    width: 100%;
+}
+.here{
+    border-bottom: 3px var(--prc) solid;
+}
+.hero{
+    background: black;
+    width: 90vw;
+    height: 90vh;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+}
+.h-img{
+    background-color: var(--prc);
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 80%;
+    height: 90%;
+    border-radius: 30px;
+    padding: 10px;
+}
+.h-side{
+    background-color: var(--prc);
+    position: relative;
+    top: 30px;
+    width: 12%;
+    height: 90%;
+    left: 50px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+model-viewer {
+    width: 100%;
+    height: 520px;
+    background-color: var(--prc);
+    display: block;
+    border-radius: 30px;
+}
+.h-side>button{
+    margin-bottom: 20px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 100%;
+    border: 2px transparent solid;
+}
+.h-side>button>img{
+    width: 100%;
+}
+.h-side>h3{
+    width: 100%;
+    margin-left: 30px;
+    color: #607EBC;
+    font-size: 24px;
+}
+.now{
+    background-color: var(--bg-color);
+    transition: 1s;
+}
+.nt-now:hover {
+    transition: 1s;
+    border-color: black;
+}
+.nt-now{
+    background-color: var(--snd);
+    transition: 1s;
+}
+.hed{
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+hr{
+    color: var(--bg-color);
+    background-color: var(--bg-color);
+    height: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgs-cont {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sp{
+    width: 25%;
+    border: 3px #607EBC solid;
+    height: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.sp>img{
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.sp>p{
+    width: 90%;
+    margin-left: 5%;
+}
+.card-cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 25%;
+    border: 2px transparent solid;
+    border-radius: 50px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    padding-top: 30px;
+    color: var(--prc);
+}
+.card>h3{
+    font-size: 25px;
+}
+.card>img{
+    width: 30%;
+    
+}
+.card>button{
+    background-color: var(--prc);
+    color: var(--bg-color);
+    border: 3px var(--prc) solid;
+    font-size: 20px;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+.card>button:hover{
+    color: var(--prc);
+    background-color: black;
+    transition: 1s;
+}
+.sp-btn{
+        background-color: var(--bg-color);
+    color: var(--prc);
+    border: 3px var(--bg-color) solid;
+    font-size: 20px;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+.sp-btn:hover{
+    color: var(--prc);
+    background-color: black;
+    transition: 1s;
+    border-color: black;
+}
+footer {
+    margin-top: 2rem;
+    padding: 0.1rem;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    text-align: center;
+    align-items: center;
+}
+abbr {
+    text-decoration: none;
+}
+abbr:hover {
+    cursor: default;
+}
