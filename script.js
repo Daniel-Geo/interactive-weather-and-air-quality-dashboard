@@ -10,6 +10,7 @@ function darkModeToggle() {
         document.getElementById("dark-mode").innerHTML = "Light mode";
         document.getElementById("dark-mode").style.color = "#1a1a1a";
         document.getElementById("dark-mode").style.background = "#f0f0f0";
+        document.getElementById("main").style.background = "#f0f0f0";
     } else {
         isDarkMode = !isDarkMode;
         document.body.style.background = "linear-gradient(to bottom left, #1a1a1a, #333333)";
@@ -17,6 +18,7 @@ function darkModeToggle() {
         document.getElementById("dark-mode").innerHTML = "Dark mode";
         document.getElementById("dark-mode").style.color = "#f0f0f0";
         document.getElementById("dark-mode").style.background = "#1a1a1a";
+        document.getElementById("main").style.background = "#1a1a1a";
 
     }
     document.getElementById("website-name").style.color = "white";
