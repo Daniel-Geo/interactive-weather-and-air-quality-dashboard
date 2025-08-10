@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background-white: #D1E0D7;
+    --background-blue: #607EBC;
+    --text-color: #1a1a1a;
+    --prc: white;
+    --snd: #eef0ef;
+    --bg-color: #607EBC;
+}
+
+body {
+    background: linear-gradient(to bottom left, var(--background-white), var(--background-blue));
+    color: var(--text-color);
+    font-family: "Mogra", system-ui;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: var(--bg-color);
+    height: 10vh;
+    border-radius: 50px;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 3vh;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--prc);
+    font-size: 18px;
+}
+
+.sm-m {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline;
+}
+
+nav>ul>li>a:hover {
+    color: black;
+    transition: 1s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav>div>button {
+    color: var(--bg-color);
+    background-color: var(--prc);
+    outline: none;
+    border: 2px transparent solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+nav>div>button:hover {
+    color: var(--prc);
+    background-color: black;
+    transition: 1s;
+}
+
+nav>div>button>a:hover {
+    color: var(--prc);
+}
+
+nav>div>button>a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    flex-wrap: wrap;
+}
+
+.img-cont>img {
+    width: 100%;
+}
+
+.here {
+    border-bottom: 3px var(--prc) solid;
+}
+
+@media (max-width: 868px) {
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--bg-color);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .sm-m {
+        display: block;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10000000000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: #607EBC;
+    top: 0;
+    left: 0;
+}
+
+.loading {
+    border: 5px white solid;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #607EBC;
+    border-top-color: #607EBC;
+    animation: rot 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading2 {
+    border: 5px white solid;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background-color: #607EBC;
+    border-top-color: #607EBC;
+    animation: rot 2s linear infinite;
+}
+
+@keyframes rot2 {
+    from { transform: rotate(360deg) }
+    to { transform: rotate(0deg) }
+}
+
+@keyframes rot {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+
+.text {
+    color: #ffffff;
+    display: block;
+}
+
+.form {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+form {
+    border: 2px var(--bg-color) solid;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+input,
+label {
+    display: block;
+}
+
+label {
+    margin-top: 30px;
+    margin-left: 4px;
+}
+
+input {
+    border: 2px var(--bg-color) solid;
+    border-radius: 20px;
+    height: 4vh;
+    width: 50%;
+    padding: 0 0 0 10px;
+    margin-top: 10px;
+}
+
+input:hover {
+    transition: 1s;
+    border-color: var(--bg-color);
+}
+
+input:focus {
+    outline-color: var(--bg-color);
+}
+
+.massage {
+    height: 15vh;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    height: 40px;
+    width: 25%;
+    background-color: var(--prc);
+    color: var(--bg-color);
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    transition: 1s;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.126);
+    color: #f0f0f0;
+    text-align: center;
+    align-content: center;
+    backdrop-filter: blur(8px);
+    backdrop-filter: brightness(1.1);
+    border-radius: 30px;
+    width: 50vw;
+    margin-left: 25vw;
+    border-left: 1px rgba(255, 255, 255, 0.4) solid;
+    border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0 0.084);
+}
+
+#author {
+    font-weight: bold;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+abbr:hover {
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .form {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    input {
+        width: 90%;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .massage {
+        height: 10vh;
+    }
+
+    .img-cont {
+        width: 60%;
+    }
+
+    footer {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 0.9rem;
+    }
+
+    .loading {
+        width: 100px;
+        height: 100px;
+    }
+
+    .loading2 {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .form {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 70%;
+    }
+
+    footer {
+        width: 100%;
+        margin-left: 0;
+        font-size: 0.8rem;
+        border-radius: 15px;
+    }
+
+    .img-cont {
+        width: 80%;
+    }
+
+    .loading {
+        width: 80px;
+        height: 80px;
+    }
+
+    .loading2 {
+        width: 60px;
