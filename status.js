@@ -20,6 +20,21 @@ function darkModeToggle() {
     }
     document.getElementById("website-name").style.color = "white";
 }
+document.getElementById('sm-m').addEventListener('click', function() {
+    document.getElementById('ul').classList.toggle('show');
+});
+setTimeout(() => {
+    console.log("Hiding loader now...");
+    document.getElementById("loader").style.display = "none"
+}, 3000);
+let getQuote = () => {
+    fetch(url)
+        .then((data) => data.json())
+        .then((item) => {
+            quote.innerText = "“" + item.quote + "” - ";
+            author.innerText = item.author;
+        });
+};
 // Initialize the map
 var map = L.map('map').setView([26.8206, 30.8025], 6);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
