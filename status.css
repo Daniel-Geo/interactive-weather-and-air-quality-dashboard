@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --background-white: #D1E0D7;
     --background-blue: #607EBC;
@@ -5,6 +7,15 @@
     --prc: white;
     --snd: #eef0ef;
     --bg-color: #607EBC;
+}
+
+body {
+    background: linear-gradient(to bottom left, var(--background-white), var(--background-blue));
+    color: var(--text-color);
+    font-family: "Mogra", system-ui;
+    margin: 0;
+   font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
 }
 
 nav {
@@ -60,6 +71,15 @@ nav>div>button:hover {
     transition: 1s;
 }
 
+nav>div>button>a:hover {
+    color: var(--prc);
+}
+
+nav>div>button>a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
 .img-cont {
     display: flex;
     justify-content: center;
@@ -71,87 +91,77 @@ nav>div>button:hover {
     width: 100%;
 }
 
-body {
-    background: linear-gradient(to bottom left, var(--background-white), var(--background-blue));
-    color: var(--text-color);
-    font-family: "Mogra", system-ui;
-    margin: 0;
-    font-size: 1.5rem;
-    text-align: center;
+.here {
+    border-bottom: 3px var(--prc) solid;
 }
 
-a {
-    color: #00a2ff;
-    text-decoration: none;
-}
-
-header h1 {
-    margin: 0;
-    color: #f0f0f0;
-    font-size: xx-large;
-}
-
-nav ul {
+.loader {
     display: flex;
-    list-style: none;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10000000000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: #607EBC;
+    top: 0;
+    left: 0;
 }
 
-nav ul li {
-    margin: 0 1rem;
+.loading {
+    border: 5px white solid;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #607EBC;
+    border-top-color: #607EBC;
+    animation: rot 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-button {
-    background-color: #f0f0f0;
-    color: #1a1a1a;
-    border: 3px solid #00a2ff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+.loading2 {
+    border: 5px white solid;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background-color: #607EBC;
+    border-top-color: #607EBC;
+    animation: rot 2s linear infinite;
 }
 
-.banner-img {
-    width: 57rem;
-    height: 32rem;
-    margin-top: 2rem;
-    border-radius: 20px;
+@keyframes rot2 {
+    from {
+        transform: rotate(360deg)
+    }
+
+    to {
+        transform: rotate(0deg)
+    }
 }
 
+@keyframes rot {
+    from {
+        transform: rotate(0deg)
+    }
 
-
-.section {
-    text-align: center;
+    to {
+        transform: rotate(360deg)
+    }
 }
 
-.air-pollution {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1rem;
-    place-items: center;
-}
-
-
-footer {
-    margin-top: 2rem;
-    padding: 0.1rem;
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-}
-
-abbr {
-    text-decoration: none;
-}
-
-abbr:hover {
-    cursor: default;
+.text {
+    color: #ffffff;
+    display: block;
 }
 
 #map {
-    height: 500px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+    height: 50vh;
     margin: 20px auto;
-    margin-bottom: 15px;
     border-radius: 12px;
 }
 
@@ -172,4 +182,35 @@ abbr:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: black !important;
     font-weight: bold;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.126);
+    color: #f0f0f0;
+    text-align: center;
+    align-content: center;
+    backdrop-filter: blur(8px);
+    backdrop-filter: brightness(1.1);
+    border-radius: 30px;
+    width: 50vw;
+    margin-left: 25vw;
+    border-left: 1px rgba(255, 255, 255, 0.4) solid;
+    border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0 0.084);
+}
+
+#author {
+
+    font-weight: bold;
+
+}
+
+abbr {
+    text-decoration: none;
+}
+
+abbr:hover {
+    cursor: default;
 }
