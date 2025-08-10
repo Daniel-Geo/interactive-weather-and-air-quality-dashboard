@@ -414,6 +414,11 @@ abbr:hover {
         font-size: 14px;
     }
     .hero{
-        height: 85vh;
+        height: 85vh;  
+        flex-direction: column;
+        height: 110vh;
+        justify-content: center;
+        align-items: center;
     }
+
 }
