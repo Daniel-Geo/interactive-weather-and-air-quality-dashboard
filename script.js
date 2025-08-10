@@ -96,3 +96,7 @@ setTimeout(() => {
     console.log("Hiding loader now...");
     document.getElementById("loader").style.display = "none"
 }, 3000);
+
+document.getElementById('sm-m').addEventListener('click', function() {
+    document.getElementById('ul').classList.toggle('show');
+});
