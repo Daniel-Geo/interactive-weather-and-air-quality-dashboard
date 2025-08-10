@@ -218,7 +218,10 @@ footer {
     border-top: 1px rgba(255, 255, 255, 0.4) solid;
     text-decoration: none;
 }
-
+footer a {
+    text-decoration: none;
+    color: inherit; 
+}
 /* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
     #Dashboard {

@@ -27,6 +27,10 @@ setTimeout(() => {
     console.log("Hiding loader now...");
     document.getElementById("loader").style.display = "none"
 }, 3000);
+let quote = document.getElementById("quote");
+let author = document.getElementById("author");
+const url = "https://quoteslate.vercel.app/api/quotes/random";
+
 let getQuote = () => {
     fetch(url)
         .then((data) => data.json())
@@ -35,6 +39,8 @@ let getQuote = () => {
             author.innerText = item.author;
         });
 };
+
+window.addEventListener("load", getQuote);
 // Initialize the map
 var map = L.map('map').setView([26.8206, 30.8025], 6);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
