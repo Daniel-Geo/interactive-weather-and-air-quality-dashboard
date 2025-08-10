@@ -324,7 +324,7 @@ abbr {
 abbr:hover {
     cursor: default;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { 
     .hero {
         flex-direction: column;
         height: 110vh;
@@ -332,6 +332,7 @@ abbr:hover {
         align-items: center;
         margin-left: 0vw;
         width: 30vw;
+        width: 95vw;
     }
     .h-img, .h-side {
         width: 90%;
@@ -378,7 +379,12 @@ abbr:hover {
     nav ul.show {
         display: flex;
     }
-    .hero {
+    .hero{
+        height: 85vh;  
+        flex-direction: column;
+        height: 110vh;
+        justify-content: center;
+        align-items: center;
         width: 95vw;
     }
     .h-side>h3{
