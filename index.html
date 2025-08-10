@@ -5,39 +5,96 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="16x16" href="icons/weather-dashboard.png">
         <link rel="stylesheet" href="style.css">
-        <title>Interactive weather and air quality dashboard</title>
+        <title>Weather forecast</title>
     </head>
     <body>
-        <header>
-            <h1 id="website-name">Interactive Weather and Air Quality Dashboard</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="placeholder1.html">placeholder1</a></li>
-                    <li><a href="placeholder2.html">placeholder2</a></li>
-                    <li><button id="dark-mode">Light mode</button></li>
-                </ul>
-            </nav>
-        </header>
+        <section id="loader" class="loader">
+            <div class="loading">
+                <div class="loading2"></div>
+            </div><br>
+            <div class="text"><p>Loading Weather forecast . . . . .</p></div>
+        </section>
+        <nav>
+            <div class="img-cont">
+                <img src="images/logo words.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="index.html" class="here">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="status.html">Status</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
 
-        <marquee direction="left">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</marquee>
+            <div>
+                <button id="dark-mode">Light mode</button>
+            </div>
+        </nav>
+
+        <marquee direction="left"><span id="cairo"></span> - <span id="paris"></span> - <span id="newyork"></span></marquee>
 
         <h2>Live Weather and Air Quality Insights at Your Fingertips</h2>
-        
-        <h3>Impact of air pollution</h3>
-        
-        <section class="air-pollution">
-            <figure>
-                <img src="images/zürich-switzerland.png" alt="Zürich city, Switzerland">
-                <figcaption>Zürich is one of the top cities in air quality</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cairo-city.png" alt="Cairo city, Egypt">
-                <figcaption>Cairo is one of the worst cities in air quality</figcaption>
-            </figure>
-        </section>
+        <h3>Human effects on the environment and our planet Earth</h3>
+
+        <main>
+            <h3>Impact of climate change</h3>
+            <section class="comparison">
+                <figure>
+                    <img src="images/fortLiverte-Haiti.png" alt="Fort Liverte city, Haiti">
+                    <figcaption>Fort Liverte city in Haiti suffers from floods due to climate change</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/dubai-uae.png" alt="Dubai city, UAE">
+                    <figcaption>Dubai city suffers from increased temperature due to climate change</figcaption>
+                </figure>
+            </section>
+            <h3>Impact of air pollution</h3>
+            <section class="comparison">
+                <figure>
+                    <img src="images/zürich-switzerland.png" alt="Zürich city, Switzerland">
+                    <figcaption>Zürich in Switzerland is one of the top cities in air quality</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cairo-city.png" alt="Cairo city, Egypt">
+                    <figcaption>Cairo is one of the worst cities in air quality</figcaption>
+                </figure>
+            </section>
+        </main>
+        <hr>
+        <h2 id="about">About Us</h2>
+        <div class="staff">
+            <h1>The developers</h1>
+            <h3>We are a team of passionate developers and environmental enthusiasts 💖</h3>
+            <div class="grid-cont">
+                <div class="cd">
+                    <div class="front">
+                        <img src="images/Kareem%20Ahmed.jpg" alt="Kareem Ahmed image" />
+                    </div>
+                    <div class="back">
+                        <p>This is Kareem Ahmed</p>
+                    </div>
+                </div>
+                <div class="cd">
+                    <div class="front">
+                        <img src="images/Daniel%20George.jpg" alt="Daniel George image" />
+                    </div>
+                    <div class="back">
+                        <p>This is Daniel George</p>
+                    </div>
+                </div>
+                <div class="cd">
+                    <div class="front">
+                        <img src="images/Youssef%20Ayman.jpg" alt="Youssef Ayman" />
+                    </div>
+                    <div class="back">
+                        <p>This is Youssef Ayman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <footer id="footer">
+            <p><span id="quote">Loading quote...</span><span class="author" id="author"></span></p>
             <p id="footer-text">Made with <abbr title="love">❤️</abbr> by <a href="https://leaderboard-seven-pi.vercel.app/" target="_blank">CS club members</a></p>
         </footer>
         <script src="script.js"></script>
