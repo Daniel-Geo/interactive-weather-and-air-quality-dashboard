@@ -220,7 +220,6 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: inherit; 
 }
 /* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
