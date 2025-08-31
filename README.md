@@ -1,3 +1,2 @@
 # interactive-weather-and-air-quality-dashboard
-A website that displays current weather forecast, and air quality data for a user-inputted location.  
-The website also includes numerous other services.
+This is a project about a wether app. this was a team project and this page i implemented it from the start to the end with its HTML ,CSS and JS and i told my team that i will submit to SOM so this is my final services page to Weather forecast and this is my time with hackatime also i made this site to show our products and subscribtions for the company.
